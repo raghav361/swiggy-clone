@@ -3,6 +3,7 @@ import { Outlet, RouterProvider, createBrowserRouter } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Cart from "./components/Cart";
+import RestaurantMenu from "./components/RestaurantMenu";
 
 const AppLayout = () => {
 	return (
@@ -26,6 +27,10 @@ const App = () => {
 				{
 					path: "/cart",
 					element: <Cart />,
+				},
+				{
+					path: "/restaurants/:restaurantName/:restaurantID",
+					element: <RestaurantMenu />,
 				},
 			],
 		},

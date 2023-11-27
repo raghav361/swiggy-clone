@@ -41,7 +41,7 @@ const RestaurantCard = (props) => {
 			</section>
 			<section className="font-body w-56 p-2">
 				<p className="truncate font-semibold text-lg">{name}</p>
-				<span className="rounded-full inline-flex bg-green-400 p-[0.15rem] mr-1 w-[1.25rem]">
+				<span className="rounded-full inline-flex bg-green-700 text-white p-[0.15rem] mr-1 w-[1.25rem]">
 					<FaStar />
 				</span>
 				<span className="font-semibold text-base">{avgRating}</span>
